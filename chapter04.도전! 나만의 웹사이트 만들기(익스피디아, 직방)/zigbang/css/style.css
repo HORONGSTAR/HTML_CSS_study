@@ -250,7 +250,11 @@ section {
    line-height: 40px;
 }
 
-.main__centent__titel button {
+.main__centent__titel a {
+   color: #555;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 58px;
    height: 30px;
    font-size: 12px;
@@ -259,12 +263,8 @@ section {
    border: none;
 }
 
-.main__centent__titel button:hover {
+.main__centent__titel a:hover {
    background-color: rgb(221, 221, 221);
-}
-
-.main__centent__titel button a {
-   color: #555;
 }
 
 .main__centent > div li {
