@@ -142,15 +142,18 @@ section {
    align-items: center;
 }
 
-.main__search__tap > ul {
-   display: flex;
-   width: 500px;
-}
-
 .main__search > h1 {
    font-size: 40px;
    font-weight: bold;
    color: #fff;
+}
+
+.main__search__tap {
+   height: 50px;
+}
+
+.main__search__tap > ul {
+   width: 500px;
 }
 
 .main__centent {
