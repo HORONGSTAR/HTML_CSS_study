@@ -150,10 +150,18 @@ section {
 
 .main__search__tap {
    height: 50px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
 }
 
 .main__search__tap > ul {
    width: 500px;
+}
+
+.main__search__input {
+   display: flex;
+   flex-direction: row-reverse;
 }
 
 .main__centent {
