@@ -1,0 +1,294 @@
+@charset "uft-8";
+
+/* ---- 초기화 ---- */
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 0.9em;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: black;
+   text-decoration: none;
+}
+
+p {
+   margin: 0;
+}
+
+.wrap {
+   min-width: 1280px;
+   overflow: hidden;
+}
+
+/* ---- 헤더 ---- */
+header {
+   position: relative;
+   min-width: 1200px;
+   height: 85px;
+}
+
+.nav {
+   display: flex;
+   position: absolute;
+   align-items: center;
+   border-bottom: 1px solid rgb(193, 193, 193);
+   background-color: white;
+   width: 100%; /* 직방 메뉴의 width가 100% */
+   padding-left: 20px;
+}
+
+.nav__menu > li {
+   position: relative; /* 하위메뉴를 만들기 위해 적용 */
+   top: 0;
+   display: inline-block; /* 수평정렬 */
+   padding: 20px;
+}
+
+.w1 {
+   display: block;
+   font-size: 17px;
+   font-weight: bold;
+}
+.w2 {
+   display: block;
+   font-size: 13px;
+}
+
+/* ---- 하위메뉴 ---- */
+.sub-menu {
+   display: none;
+   position: absolute; /* li 태그를 기준으로 위치를 잡음 */
+   width: 200px;
+   background-color: white;
+   top: 85px; /* 하위메뉴가 나타날 위치, 메뉴의 height와 같음 */
+   border: 1px solid rgb(193, 193, 193);
+   font-size: 13px;
+}
+
+.sub-menu > li {
+   padding: 10px;
+}
+
+.nav__menu li:hover .sub-menu {
+   display: block;
+}
+
+nav .right-menu {
+   position: absolute;
+   right: 0;
+   width: 300px;
+   float: right;
+   display: flex;
+   align-items: center;
+}
+
+nav .login {
+   font-size: 12px;
+   background-color: rgb(232, 232, 232);
+   border: 1px solid rgb(202, 202, 202);
+   border-radius: 5px;
+   color: black;
+   width: 125px;
+   height: 30px;
+   margin-right: 20px;
+}
+
+nav .login:hover {
+   background-color: rgb(221, 221, 221);
+}
+
+nav .right-menu__btn {
+   width: 165px;
+   height: 85px;
+   text-align: right;
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 18px;
+   padding: 10px;
+   color: #04360a;
+}
+
+nav .right-menu__btn:hover {
+   background-color: rgb(221, 221, 221);
+}
+
+nav .right-menu__btn > div:nth-child(2) {
+   font-size: 18px;
+   padding-left: 12px;
+}
+
+/* ---- 메인 ----  */
+
+section {
+   margin-bottom: 40px;
+}
+.main__search {
+   width: 100%;
+   height: 460px;
+   background: url(../images/bg.jpg) no-repeat center/cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.main__search__tap > ul {
+   display: flex;
+   width: 500px;
+}
+
+.main__search > h1 {
+   font-size: 40px;
+   font-weight: bold;
+   color: #fff;
+}
+
+.main__centent {
+   display: flex;
+   justify-content: center;
+}
+.main__centent > div {
+   width: 260px;
+   height: 204px;
+   display: flex;
+   flex-direction: column;
+}
+
+.main__centent__titel {
+   height: 40px;
+   display: flex;
+   padding-bottom: 5px;
+   border-bottom: 1px solid #ddd;
+   justify-content: space-between;
+   margin-bottom: 8px;
+}
+.main__centent__titel h4 {
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 40px;
+}
+
+.main__centent__titel button {
+   width: 58px;
+   height: 30px;
+   font-size: 12px;
+   background-color: rgb(232, 232, 232);
+   border-radius: 3px;
+   border: none;
+}
+
+.main__centent__titel button:hover {
+   background-color: rgb(221, 221, 221);
+}
+
+.main__centent__titel button a {
+   color: #555;
+}
+
+.main__centent > div li {
+   font-size: 11px;
+   padding: 8px;
+}
+
+.main__centent > div li:hover {
+   background-color: #f3f3f3;
+}
+
+.main__centent__box1 img {
+   padding-top: 12px;
+}
+
+.main__centent__box2,
+.main__centent__box3 {
+   margin-left: 30px;
+}
+
+.ellipsis {
+   width: 100%; /* 필요한 너비를 설정(필수) */
+   white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정(필수) */
+   overflow: hidden; /* 넘치는 텍스트를 숨김(필수) */
+   text-overflow: ellipsis; /* 넘치는 텍스트를 말줄임표로 표시(필수) */
+}
+
+.main__banner {
+   background-color: #f3f3f3;
+   display: flex;
+   justify-content: center;
+}
+
+.banner__content {
+   width: 890px;
+   height: 280px;
+   background: url(../images/phone.png) no-repeat 110px 0px / contain;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.banner__content > div {
+   margin-left: 360px;
+}
+
+.banner__content > div:nth-child(1) {
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+
+.banner__content > div > h6 {
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.banner__content > div > button {
+   width: 180px;
+   height: 50px;
+   margin-right: 20px;
+   background-color: rgb(212, 214, 213);
+   color: #222;
+   font-weight: bold;
+   font-size: 20px;
+   border: none;
+   border-radius: 5px;
+}
+.banner__content > div > button:hover {
+   color: #222;
+   background-color: rgb(179, 179, 179);
+}
+
+footer > div {
+   text-align: center;
+   font-size: 12px;
+   margin: 20px auto;
+}
+
+footer > div:nth-child(3) {
+   display: flex;
+   justify-content: center;
+}
+
+footer > div:nth-child(3) > a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 35px;
+   height: 35px;
+   font-size: 16px;
+   background-color: #eee;
+   margin: 6px;
+   color: #777;
+   border: 1px solid #ddd;
+}
+
+footer > div:nth-child(4) {
+   color: #aaa;
+}
